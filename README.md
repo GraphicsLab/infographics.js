@@ -9,5 +9,8 @@ To make easy Inforgraphics on your HTML.
 ## Usages
 To be filled in future
 
+### Pre-occupied class names
+To be filled in future with tables
+
 ## Version Control
 To be filled in future

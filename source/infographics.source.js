@@ -40,8 +40,7 @@ Infographics.prototype.init = function(){
 		}
 
 		//=== DO TEST
-		var test_msg = "Hello, Infographics";
-		this.root.innerHTML = test_msg;
+		this.helloWorld();
 	}catch(exception){
 		console.log('An Exception has occured. ', exception);
 	}
@@ -67,4 +66,15 @@ Infographics.prototype.loadDefaultData = function(type){
 		default:
 	}
 	console.log(this.ticks);
+}
+
+
+
+
+
+///============== This functions for test
+
+Infographics.prototype.helloWorld = function(){
+	var test_msg = "Hello, Infographics";
+		this.root.innerHTML = test_msg;
 }

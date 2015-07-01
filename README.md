@@ -1,5 +1,5 @@
 #Infographics.js 
-author: junyoung@hanmail.net<br/>
+author: juneyoung@hanmail.net<br/>
 commiters:<br/>
 contributors:<br/>
 

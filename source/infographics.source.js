@@ -10,8 +10,12 @@
 * milestone  달성 후 code review 가 필요함.
 */
 
+var INFOGRAPHICS = INFOGRAPHICS || new Infographics();
+
+const rootClassName = 'info-root';
+
 function Infographics (){
-	const rootClassName = '.Infograhics_playground';
+	//const rootClassName = 'info-root';
 	var root;
 	var ticks;
 
@@ -25,11 +29,19 @@ function Infographics (){
 */
 Infographics.prototype.init = function(){
 	try{
-		this.root = document.getElementsByClass(this.rootClassName);
-		if(validate(this.root)) {
+		//caution : document.getElementsByClassName returns Node List, not Element
+		//link reference : http://stackoverflow.com/questions/17896746/document-getelementsbyclassname-innerhtml-always-returns-undefined
+		this.root = document.getElementsByClassName(rootClassName)[0];
+		console.log(this.root);
+
+		if(!this.validate(this.root)) {
 			console.log('can not initiate Infographics.js');
 			return;
 		}
+
+		//=== DO TEST
+		var test_msg = "Hello, Infographics";
+		this.root.innerHTML = test_msg;
 	}catch(exception){
 		console.log('An Exception has occured. ', exception);
 	}

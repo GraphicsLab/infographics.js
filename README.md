@@ -1,7 +1,7 @@
 #Infographics.js 
-author: junyoung@hanmail.net
-commiters:
-contributors:
+author: junyoung@hanmail.net<br/>
+commiters:<br/>
+contributors:<br/>
 
 ## Purpose of this library
 To make easy Inforgraphics on your HTML.

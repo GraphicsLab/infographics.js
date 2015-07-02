@@ -9,15 +9,15 @@
 * version 1 은 milestone1 의 목표에 따라 빌드함.
 * milestone  달성 후 code review 가 필요함.
 */
+const rootClassName = 'info-root';
 
 var INFOGRAPHICS = INFOGRAPHICS || new Infographics();
-
-const rootClassName = 'info-root';
 
 function Infographics (){
 	//const rootClassName = 'info-root';
 	var root;
 	var ticks;
+	var data;
 
 	//size definition
 	var XXL, XL, L, M, S, XS, XXS; 
@@ -68,8 +68,20 @@ Infographics.prototype.loadDefaultData = function(type){
 	console.log(this.ticks);
 }
 
+//============== Laoding data from csv, excel
+
+Infographics.prototype.addFileData = function(filename){
+	//extract file extension
+
+	var extension = filename.lastIndexOf('.');
+
+}
 
 
+Infographics.prototype.validateFileString = function(fileStr){
+	// EveryString should contains .XXX(extension)
+	var ret = true;
+}
 
 
 ///============== This functions for test

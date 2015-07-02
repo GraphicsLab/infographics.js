@@ -2,6 +2,7 @@
 author: juneyoung@hanmail.net<br/>
 commiters:<br/>
 contributors:<br/>
+testers:<br/>
 
 ## Purpose of this library
 To make easy Inforgraphics on your HTML.
